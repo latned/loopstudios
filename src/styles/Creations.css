@@ -1,0 +1,125 @@
+.creations {
+  display: grid;
+  gap: 2rem;
+  max-width: 1066px;
+}
+
+@media (width > 700px) {
+  .creations {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.creations__title {
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.creations__projects-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (width > 700px) {
+  .creations__projects-container {
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / span 2;
+    place-items: center;
+  }
+
+  .creations__title {
+    font-size: 40px;
+    justify-self: start;
+  }
+}
+
+@media (width > 900px) {
+  .creations__projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (width > 1200px) {
+  .creations__projects-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.creations__project {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  display: flex;
+  height: 120px;
+  color: #fff;
+  align-items: flex-end;
+  font-size: 24px;
+  font-family: josefin;
+  text-align: start;
+  padding: 1rem 11rem 1rem 1rem;
+}
+
+.creations__project:hover {
+  color: #000;
+}
+
+.creations__project--sml-size {
+  padding-right: 13rem;
+}
+
+@media (width > 700px) {
+  .creations__project {
+    height: 435px;
+    padding: 2rem 4rem 2rem 2rem;
+    font-size: 26px;
+    width: 250px;
+  }
+
+  .creations__project--sml-size {
+    padding-right: 6rem;
+  }
+}
+
+.creations__btn {
+  background: transparent;
+  border: 2px solid hsl(0, 0%, 60%);
+  border-radius: 2px;
+  color: #050505;
+  cursor: pointer;
+  font-family: alata;
+  font-size: 14px;
+  height: 42px;
+  letter-spacing: 5px;
+  max-width: 310px;
+  width: 166px;
+  justify-self: end;
+  transition: background .15s, color .15s, border-color .15s;
+}
+
+.creations__btn:hover {
+  background: #000;
+  color: white;
+  border-color: #000;
+}
+
+@media (width < 1000px) {
+  .creations__btn {
+    grid-row: 3;
+    justify-self: center;
+  }
+}
+
+@media (width > 700px) and (width < 1000px) {
+  .creations__btn {
+    grid-column: 1 / span 2;
+  }
+
+  .creations__title {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+}
