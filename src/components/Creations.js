@@ -49,14 +49,14 @@ function Projects(props) {
 
 const CreateProject = (props) => {
   let clsTitle = 'creations__project';
-  let bgImg = `/images/mobile/bg-mb${props.project.id}.jpg`;
+  let bgImg = require(`../../public/images/mobile/bg-mb${props.project.id}.jpg`);
 
   if (props.project.id === 3) {
     clsTitle += ' creations__project--sml-size';
   }
 
   if (props.project.w === '700') {
-    bgImg = `/images/desktop/bg${props.project.id}.jpg`;
+    bgImg = require(`../../public/images/desktop/bg${props.project.id}.jpg`);
   }
 
   const changeBgImg = (e) => {
