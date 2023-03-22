@@ -20,12 +20,17 @@
 }
 
 .hamburger-menu {
-  background: url('../icons/icon-hamburger.svg');
+  background-color: transparent;
+  background-image: url('../icons/icon-hamburger.svg');
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   height: 25px;
   width: 25px;
+}
+
+.new-bg {
+  background-image: url('../icons/icon-close.svg');
 }
 
 .logo-container,
@@ -57,7 +62,7 @@ hr {
 
 @media (width < 700px) {
   hr {
-    width: 7%;
+    width: 25px;
   }
 }
 

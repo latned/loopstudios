@@ -57,6 +57,11 @@ footer {
   padding-bottom: 3px;
 }
 
+.nav-menu__link-container {
+  justify-self: center;
+  width: max-content;
+}
+
 .nav-menu__link-container:hover hr, 
 .ft__icon-wrapper:hover hr {
   border-bottom: 3px solid white;

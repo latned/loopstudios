@@ -2,6 +2,7 @@
   display: grid;
   gap: 3rem;
   place-items: center;
+  max-width: 1066px;
 }
 
 .preview__content {

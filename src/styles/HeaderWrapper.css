@@ -2,6 +2,7 @@
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../../public/images/desktop/image-hero.jpg) center top;
   display: grid;
   margin-bottom: 4.5rem;
+  background-size: cover;
 }
 
 @media (width < 376px) {

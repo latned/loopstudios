@@ -8,7 +8,7 @@ function HeaderWrapper() {
   const ShowMenu = () => {
     if (show === true) {
       setShow(false);
-      document.getElementById('menu-btn').style.backgroundImage = 'url(/images/icon-hamburger.svg)';
+      document.getElementById('menu-btn').classList.remove("new-bg");
     } else {
       setShow(true);
     }
@@ -35,7 +35,7 @@ function HeaderTitle() {
 
 function CreateMenu() {
   const pagesCaps = ['ABOUT', 'CAREERS', 'EVENTS', 'PRODUCTS', 'SUPPORT']
-  document.getElementById('menu-btn').style.backgroundImage = 'url(/images/icon-close.svg)';
+  document.getElementById('menu-btn').classList.add("new-bg");
 
   const CreatePage = (props) => {
     return <a className="open-menu__link" href="/">{props.page}</a>;
